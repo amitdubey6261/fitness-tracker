@@ -5,11 +5,11 @@ const initialStage = {
 }
 
 export const loader = createReducer( initialStage ,{
-    startLoading : ( state  , action )=>{
+    startLoading : ( state  )=>{
         state.loading = true ;
     } , 
 
-    stopLoading : (state , action )=>{
+    stopLoading : (state  )=>{
         state.loading = false ;
     } 
 })
