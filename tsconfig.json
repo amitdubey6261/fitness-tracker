@@ -19,9 +19,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "exclude": [
-    "node_modules/ml5"
-  ],
   "include": ["src"],
 
   "references": [{ "path": "./tsconfig.node.json" }]
