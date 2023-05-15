@@ -6,13 +6,12 @@ import p5Types from "p5";
 
 export default () => {
   let video: p5Types.Element;
-  let posenet ; 
 
   const setup = (p5: p5Types, canvasParentRef: Element) => {
     p5.createCanvas(window.screen.availWidth, window.screen.availHeight).parent(canvasParentRef);
     video = p5.createCapture(p5.VIDEO);
     video.hide();
-    posenet = ml5.poseNet(video, modelLoaded);
+    ml5.poseNet(video, modelLoaded);
   }
 
   const modelLoaded = () => {
