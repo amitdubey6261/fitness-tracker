@@ -1,6 +1,12 @@
+import './homePage.css'
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <main >
+        <h1>I AM MAIN PAGE </h1>
+      </main>
+    </>
   )
 }
 

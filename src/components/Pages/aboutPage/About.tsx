@@ -1,7 +1,12 @@
+import './aboutPage.css'
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+    <main className="main">
+      MAIN PAGE
+    </main>
+    </>
   )
 }
 
