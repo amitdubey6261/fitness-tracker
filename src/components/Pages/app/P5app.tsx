@@ -6,7 +6,8 @@ import p5Types from "p5";
 
 export default () => {
   let video: p5Types.Element;
-  let poseNet : Element ; 
+  let poseNet : any ; 
+//   let pose ; 
 
   const setup = (p5: p5Types, canvasParentRef: Element) => {
     p5.createCanvas(window.screen.availWidth, window.screen.availHeight).parent(canvasParentRef);
@@ -16,7 +17,12 @@ export default () => {
   }
 
   const modelLoaded = () => {
-    console.log('model loaded');
+    console.log('poseDetected');
+    poseNet.on('pose' , posedetected) ; 
+  }
+
+  const posedetected = () =>{
+
   }
 
   const draw = (p5: p5Types) => {
