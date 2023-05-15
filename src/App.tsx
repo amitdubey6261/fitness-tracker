@@ -1,10 +1,12 @@
+import './App.css'
+
 import { Provider } from 'react-redux';
 import store from './redux/store';
 
 import { BrowserRouter ,  Route , Routes } from 'react-router-dom';
 //global
-import { Navbar } from './components/Global/Navbar';
-import { Footer } from './components/Global/Footer';
+import { Navbar } from './components/Global/navbar/Navbar';
+import { Footer } from './components/Global/footer/Footer';
 
 //loacal
 import Home from './components/Pages/homePage/Home';
